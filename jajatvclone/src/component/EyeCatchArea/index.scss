@@ -1,0 +1,60 @@
+@import "src/scss/_variable";
+
+.o-eyecatch {
+  &-area {
+    position: relative;
+    margin: 0;
+    padding: 0;
+  }
+  &-section-1{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 80px;
+  }
+
+  &-fl{
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    width: 50%;
+    .a-tdl {
+      &-wrap {
+        justify-content: end;
+        width: 50%;
+      }
+    }
+  }
+
+  &-feature-logo{
+    width: 7vw;
+    margin-top: 4vw;
+  }
+
+  &-feature-text{
+    position: fixed;
+    color: $gridColor;
+    font-family: montserrat_bold;
+    padding: 0;
+    font-size: 8.5vw;
+    letter-spacing: .5rem;
+    line-height: 6.2vw;
+    margin: 0;
+  }
+
+  &-moon{
+    position: absolute;
+    left: 50%;
+    top: 170px;
+    transform: translateX(-50%);
+  }
+
+  &-dd{
+    display: flex;
+    padding-top: 120px;
+    gap: 25%;
+    transform: translateX(0%);
+    align-items: center;
+  }
+
+}

@@ -1,0 +1,89 @@
+@import '../../scss/_variable.scss';
+
+.o-feature-list {
+  &-area {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    padding-bottom: 150px;
+    width: 100%;
+  }
+
+  &-item {
+    width: 100%;
+    position: relative;
+    margin-bottom: 100px;
+
+    &-bg-image {
+      width: 50%;
+
+      img {
+        width: calc(200%*(.08/.84) + 100%);
+        margin-left: calc((-1) * 200%*(.08/.84));
+      }
+    }
+
+    &-mobile-image {
+      position: absolute;
+      top: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      height: 100%;
+
+
+      img {
+        height: 100%;
+      }
+
+      video {
+        position: absolute;
+        width: 90%;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+      }
+    }
+
+    &-text-content {
+      position: absolute;
+      right: 0;
+      top: 0;
+      width: 25%;
+
+    }
+
+    &-count {
+      font-size: 137px;
+      font-family: 'montserrat_bold';
+      text-align: right;
+      width: 100%;
+      color: #4B4A65;
+
+    }
+
+    &-title {
+      white-space: pre-wrap;
+      font-family: montserrat_bold;
+      color: #fff;
+      margin-top: -52px;
+      font-size: 27px;
+    }
+
+    &-sub-title {
+      padding-top: 30px;
+      color: #fff;
+      letter-spacing: .1vw;
+      width: 100%;
+      position: relative;
+      font-size: 22px;
+    }
+
+    &-desc {
+      padding-top: 10px;
+      color: hsla(0, 0%, 100%, .6);
+      padding: 0;
+      width: 100%;
+      position: relative;
+    }
+  }
+}
