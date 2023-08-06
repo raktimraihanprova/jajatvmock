@@ -1,0 +1,17 @@
+.a-cut{
+    &-wrap{
+        padding-left: 40px;
+        height: 40px;
+        width: 200px;
+        border-radius: 30%;
+        background-color: rgb(26,32,52)        
+    }
+
+    &-icon{
+        font-size: 160%;
+    }
+
+    &-txt{
+        margin-left: 10px;
+    }
+}

@@ -1,0 +1,22 @@
+@import 'src/scss/_variable';
+@import 'src/scss/_mixin';
+
+.a-ecmt{
+    &-wrap{
+        
+    
+        margin-left: 50%;
+        
+    }
+    &-header{
+        color: $white;
+        font-size: clamp(20px, 2vw, 45px);
+        margin-right: 20px;
+        &-desc{
+            color: $white;
+            font-family: Conv_NotoSansCJKjp-Regular;
+            font-size: 1.1vw;
+            letter-spacing: .1rem;
+        }
+    }
+}

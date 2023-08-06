@@ -1,0 +1,209 @@
+@import 'src/scss/_variable';
+@import 'src/scss/_mixin';
+
+.o-ffeature-list {
+    &-area {
+
+        overflow: hidden;
+        position: relative;
+        margin: 0;
+        padding: 0;
+        padding-bottom: 150px;
+        width: 100%;
+    }
+
+    &-item {
+        width: 100%;
+        position: relative;
+        margin-bottom: 100px;
+
+
+        &-bg-image{
+            width: 50%;
+            position: relative;
+            @include mobileDevice () {
+                width: 100%;
+            }
+
+            &-of{
+            color: white;
+            }
+            &-am{
+                color: white;
+                padding-bottom: 10px;
+            }
+
+            img {
+                width: calc(200%*(.08/.84) + 100%);
+                margin-left: calc((-1) * 200%*(.08/.84));
+
+                @include mobileDevice () {
+                    width: 100%;
+                    margin-left: 0;
+                }
+            }
+            .a-dash-line{
+                position: absolute;
+                top: 50%;
+            }
+
+           
+        }
+
+       &-fi{
+        width: 20%;
+       
+       }
+        
+       &-fi1{
+        padding-top:50px ;
+        width: 20%;
+       
+       }
+       &-fi2{
+        padding-top:50px ;
+        width: 20%;
+       
+       }
+        &-mobile-image {
+            position: absolute;
+            top: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            height: 100%;
+
+            @include mobileDevice () {
+                height: unset;
+                width: 45%;
+                margin-left: 0;
+                top: 102px;
+                left: 100%;
+                transform: translateX(-100%);
+            }
+
+            img {
+                height: 100%;
+            }
+
+            video {
+                position: absolute;
+                width: 90%;
+                left: 50%;
+                top: 50%;
+                transform: translate(-50%, -50%);
+            }
+        }
+
+        &-text-content1 {
+            position: absolute;
+            right: 25%;
+            top: 0;
+            width: 25%;
+
+            @include mobileDevice () {
+                position: relative;
+                width: 100%;
+            }
+        }
+
+
+        &-count1 {
+            font-size: 137px;
+            font-family: 'montserrat_bold';
+            text-align: right;
+            width: 100%;
+            color: #4B4A65;
+
+            @include mobileDevice () {
+                width: 50%;
+            }
+        }
+
+        &-title1 {
+            padding-top:35px ;
+            white-space: pre-wrap;
+            font-family: montserrat_bold;
+            color: rgb(176,177,183);
+            // margin-top: -52px;
+            font-size: 27px;
+        }
+
+        &-sub-title1 {
+        
+            padding-top: 50px;
+            color: #fff;
+            letter-spacing: .1vw;
+            width: 100%;
+            position: relative;
+            font-size: 22px;
+        }
+
+        &-desc1 {
+            margin-top: 40px;
+            padding-top: 10px;
+            color: hsla(0, 0%, 100%, .6);
+            padding: 0;
+            width: 100%;
+            position: relative;
+        }
+
+
+
+
+
+        &-text-content {
+            position: absolute;
+            right: 0;
+            top: 0;
+            width: 25%;
+
+            @include mobileDevice () {
+                position: relative;
+                width: 100%;
+            }
+        }
+
+
+        &-count {
+            font-size: 137px;
+            font-family: 'montserrat_bold';
+            text-align: right;
+            width: 100%;
+            color: #4B4A65;
+
+            @include mobileDevice () {
+                width: 50%;
+            }
+        }
+
+        &-title {
+            padding-top: 70px;
+            white-space: pre-wrap;
+            font-family: montserrat_bold;
+            color: rgb(176,177,183);
+            font-size: 1.3vw;
+            margin-top: -52px;
+            
+        }
+
+        &-sub-title {
+        
+            // padding-top: 30px;
+            color: rgb(255,255,255);
+            letter-spacing: .1vw;
+            width: 100%;
+            position: relative;
+            font-size: 1.2vw;
+            padding-top: 25px;
+        }
+
+        &-desc {
+            // margin-top: 40px;
+            padding-top: 30px;
+            color: hsla(0, 0%, 100%, .6);
+            width: 100%;
+            position: relative;
+            font-size: 1vw;
+        }
+    }
+}

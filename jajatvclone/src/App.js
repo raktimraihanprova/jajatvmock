@@ -1,24 +1,21 @@
-import logo from './logo.svg';
-import './App.css';
-import GridMainLayout from "./layout/gridMainLayout";
-import EyeCatchArea from "./component/EyeCatchArea";
-import MainLayout from "./layout/mainLayout";
-import EyeCatchVideos from "./component/eyeCatchVideos";
-import FeatureListSection from "./component/featureListSection";
-
+import GridMainLayout from './components/layouts/gridMainLayout';
+import MainLayout from './components/layouts/mainLayout';
+import EyeCatchArea from './components/eyeCatchArea';
+import './scss/common.scss';
+import EyeCatchVideoArea from './components/eyeCatchVideoArea';
+import FeatureListSection from './components/featureListSection';
+import   AndMoreSection from './components/andMoreArea'
+import FooterArea from './components/footerArea';
 function App() {
   return (
-    <div>
-      <MainLayout>
-        <GridMainLayout >
-            <EyeCatchArea />
-            <EyeCatchVideos />
-            <FeatureListSection />
-        </GridMainLayout>
-      </MainLayout>
-
-
-    </div>
+    <MainLayout>
+      <GridMainLayout>
+        <EyeCatchArea />
+        <EyeCatchVideoArea />
+        <FeatureListSection />
+        <AndMoreSection/>
+      </GridMainLayout>
+    </MainLayout>
   );
 }
 
