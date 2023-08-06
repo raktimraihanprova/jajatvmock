@@ -1,0 +1,31 @@
+@import 'src/scss/_variable';
+@import 'src/scss/_mixin';
+.o-header{
+    &-area{
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        z-index: 99999999;
+        &-content{
+            display: flex;
+            width: 100%;
+        }
+
+        .a-language-block{
+            transform: translateY(20px);
+            margin-left: 500px;
+        }
+        .m-fii-wrap{
+            margin-left: 800px;
+        }
+    }
+
+
+    
+    
+    &-logo1{
+        max-width: 60px;
+    }
+    
+}

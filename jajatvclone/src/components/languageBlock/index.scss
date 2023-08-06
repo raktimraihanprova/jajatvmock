@@ -1,0 +1,26 @@
+@import 'src/scss/_variable';
+@import 'src/scss/_mixin';
+.a-language{
+        &-block{
+                margin-right: 35%;
+                cursor: pointer;
+                display: flex;
+                border-bottoms: 1px solid rgb(108,112,128);
+        }
+        &-text{
+                &-active{
+                        color: $white;
+                        border-bottom: 1px solid $white;
+                }
+
+                &-en{   
+                        color: white;
+                        margin-right: 50px;
+                }
+                &-ja{
+                        color: white;
+                }
+        }
+       
+
+}

@@ -1,0 +1,8 @@
+@import 'src/scss/_variable';
+@import 'src/scss/_mixin';
+.a-dash-line{
+    
+        height: 1px;
+        width: 20px;
+        background-color: $white;
+}

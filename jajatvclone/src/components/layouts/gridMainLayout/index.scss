@@ -1,0 +1,17 @@
+@import 'src/scss/_variable';
+@import 'src/scss/_mixin';
+
+.t-grid-main-layout{
+    display: flex;
+    &-side{
+        width: 8%;
+        height: 100%;
+    }
+    &-middle{
+        height: 100%;
+        width: 84%;
+        background-color: transparent;
+        border-left: 1px solid $gridColor;
+        border-right: 1px solid $gridColor;
+    }
+}

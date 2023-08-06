@@ -1,0 +1,34 @@
+@font-face {
+    font-family: 'montserrat_bold';
+    src: url('../assets/fonts/montserrat-bold-webfont.woff2') format('woff2'), url('../assets/fonts/montserrat-bold-webfont.woff') format('woff'), url('../assets/fonts/Montserrat-Bold.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'montserrat_light';
+    src: url('../assets/fonts/montserrat-light-webfont.woff2') format('woff2'), url('../assets/fonts/montserrat-light-webfont.eot') format('eot'), url('../assets/fonts/montserrat-light-webfont.woff') format('woff'), url('../assets/fonts/Montserrat-Light.ttf') format('truetype');
+    ;
+}
+
+@font-face {
+    font-family: 'montserrat_regular';
+    src: url('../assets/fonts/montserrat-regular-webfont.woff2') format('woff2'), url('../assets/fonts/montserrat-regular-webfont.eot') format('eot'), url('../assets/fonts/montserrat-regular-webfont.woff') format('woff'), url('../assets/fonts/Montserrat-Regular.ttf') format('truetype');
+    ;
+}
+
+@font-face {
+    font-family: 'Conv_NotoSansCJKjp-Regular';
+    src: url('../assets/fonts/NotoSansCJKjp-Regular.eot'), url('../assets/fonts/NotoSansCJKjp-Regular.woff') format('woff'), url('../assets/fonts/NotoSansCJKjp-Regular.otf') format('otf'), url('../assets/fonts/NotoSansCJKjp-Regular.ttf') format('truetype'), url('../assets/fonts/NotoSansCJKjp-Regular.svg') format('svg');
+}
+
+@font-face {
+    font-family: "Conv_NotoSansCJKjp-Medium";
+    src: url("../assets/fonts/NotoSansCJKjp-Medium.eot"), url("../assets/fonts/NotoSansCJKjp-Medium.woff") format("woff"), url("../assets/fonts/NotoSansCJKjp-Medium.otf") format("otf"), url("../assets/fonts/NotoSansCJKjp-Medium.ttf") format("truetype"), url("../assets/fonts/NotoSansCJKjp-Medium.svg") format("svg");
+}
+
+*{
+    box-sizing: border-box;
+}
+p{
+    margin: 0;
+    padding: 0;
+}

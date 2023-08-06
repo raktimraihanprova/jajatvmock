@@ -1,0 +1,19 @@
+@import 'src/scss/_variable';
+@import 'src/scss/_mixin';
+.a-ectt{
+    &-wrap{
+        display: flex;
+        align-items: baseline;
+    }
+    &-header{
+        margin: 0;
+        padding: 0;
+        color: $white;
+        font-weight: bold;
+        &-desc{
+            margin-top: 30px;
+            color: $white;
+            padding-left: 10px;
+        }
+    }
+}

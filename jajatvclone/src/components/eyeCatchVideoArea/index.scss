@@ -1,0 +1,44 @@
+@import 'src/scss/_variable';
+@import 'src/scss/_mixin';
+.o-eyecatch-video{
+    &-area{
+        position: relative;
+        margin: 0;
+        padding: 0;
+        padding-bottom: 150px;
+
+        .a-ecmt-header{
+            color: rgb(71,79,106)
+
+        }
+
+        .a-ecmt-wrap{
+            transform: translateX(-300px);
+
+        }
+
+        .a-ecmt-header-desc{
+
+            font-size: 1.5vw;
+            width: 900px;
+            
+        }
+
+    }
+    &-section{
+        width: 100%;
+        position: relative;
+
+        .a-dash-line{
+            position: absolute;
+            left: calc( 25% - 10.25px);
+            transform: translateY(5px) rotate(90deg);
+        }
+
+        
+
+       
+    }
+}
+
+

@@ -1,0 +1,13 @@
+@import 'src/scss/_variable';
+@import 'src/scss/_mixin';
+
+.a-scroll-button{
+        position: fixed;
+        right: 100px;
+        bottom: 100px;
+        transform: translateX(-15px);
+        cursor: pointer;
+        &-text{
+                color: $white;
+        }
+}

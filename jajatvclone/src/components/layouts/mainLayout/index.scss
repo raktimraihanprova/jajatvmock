@@ -1,0 +1,15 @@
+.t-main-layout {
+    z-index: 1;
+    position: relative;
+    &-bg-fix {
+        background: url("../../../assets/image/jajatv_bg.png");
+        position: absolute;
+        height: 100%;
+        top: 0;
+        width: 100%;
+        background-size: cover;
+    }
+    &-body {
+        position: relative;
+    }
+}

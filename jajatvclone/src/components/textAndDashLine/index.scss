@@ -1,0 +1,15 @@
+@import 'src/scss/_variable';
+@import 'src/scss/_mixin';
+
+.a-tdl{
+    &-wrap{
+        display: flex;
+        align-items: inherit;
+    }
+    &-text{
+        margin-right: 20px;
+        color: $white;
+        font-family: montserrat_regular;
+        font-size: calc(.2rem + .7vw);
+    }
+}

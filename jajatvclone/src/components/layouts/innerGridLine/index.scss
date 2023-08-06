@@ -1,0 +1,30 @@
+@import 'src/scss/_variable';
+@import 'src/scss/_mixin';
+
+.inner-grid-line {
+    height: 100%;
+    width: 1px;
+    background-color: $gridColor;
+    position: absolute;
+    top: 0;
+
+    &-1 {
+        left: calc(25% - .5px);
+
+        @include mobileDevice () {
+            display: none;
+        }
+    }
+
+    &-2 {
+        left: calc(50% - .5px);
+    }
+
+    &-3 {
+        left: calc(75% - .5px);
+
+        @include mobileDevice () {
+            display: none;
+        }
+    }
+}
