@@ -1,5 +1,5 @@
-@import 'src/scss/_variable';
-@import 'src/scss/_mixin';
+@import '../../scss/_variable';
+@import '../../scss/_mixin';
 .o-eyecatch-video{
     &-area{
         position: relative;
@@ -8,20 +8,41 @@
         padding-bottom: 150px;
 
         .a-ecmt-header{
-            color: rgb(71,79,106)
+            color: rgb(71,79,106);
+            font-size:1.3vw;
+
+        @include mobileDevice(){
+            font-size: 3vw;
+            width: 50vw;
+        }
 
         }
 
         .a-ecmt-wrap{
-            transform: translateX(-300px);
+            transform: translateX(-20.5vw);
+
+            @include mobileDevice(){
+
+                transform: translateX(-41.5vw);
+            }
 
         }
 
         .a-ecmt-header-desc{
-
-            font-size: 1.5vw;
-            width: 900px;
             
+            font-family: montserrat_regular;
+            font-size: 1.5vw;
+            width: 65vw;
+
+            @include mobileDevice(){
+                font-size: 4vw;
+                width: 84.6vw;
+            }
+            
+        }
+
+        @include mobileDevice() {
+            margin-top: 8vh;
         }
 
     }
@@ -29,6 +50,9 @@
         width: 100%;
         position: relative;
 
+       
+        
+        
         .a-dash-line{
             position: absolute;
             left: calc( 25% - 10.25px);

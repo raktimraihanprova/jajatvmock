@@ -1,17 +1,35 @@
 .a-cut{
     &-wrap{
-        padding-left: 40px;
-        height: 40px;
-        width: 200px;
-        border-radius: 30%;
-        background-color: rgb(26,32,52)        
+        //border: 1px solid red;
+        height: 1.3vw;
+        width: 7vw;
+        border-radius: 10vw!important;
+        background-color: rgb(26,32,52);
+        padding-left: 1.5vw;
+        font-style: normal;
+        align-content: center;
+        padding-top: 5rem;
+        padding-top: 0;
+        padding-bottom: calc(0.3vw + 10px);
+        margin-bottom: 0.1vw;
+
+
     }
 
     &-icon{
-        font-size: 160%;
+        font-size: 0.7vw;
+        margin-right: 0.3vw;
+        margin-top: 0.1vw;
+        align-content: center;
+        justify-content: start;
     }
 
     &-txt{
-        margin-left: 10px;
+        margin-left: 0vw;
+        font-size: 0.5vw;
+        font-style: normal;
+        align-content: center;
+
+
     }
 }

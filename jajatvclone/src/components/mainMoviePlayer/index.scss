@@ -1,13 +1,16 @@
-
-@import 'src/scss/_variable';
-@import 'src/scss/_mixin';
-
+@import '../../scss/_variable';
+@import '../../scss/_mixin';
 .playPauseBar{
     width: 100px;
     height: 100px;
-    transform:  translate(50px,-50px);
+    transform:  translate(40px,-50px);
+    box-sizing: border-box;
 }
 
 .playPauseButton{
-    transform: translate(45px, -82px);
+    transform: translate(43px, -60px);
+    padding: 0px;
+
+
+
 }

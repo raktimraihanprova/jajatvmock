@@ -1,8 +1,9 @@
-@import 'src/scss/_variable';
-@import 'src/scss/_mixin';
+@import '../../scss/_variable';
+@import '../../scss/_mixin';
 
 .m-play-store{
     &-area{
+        padding-top: 10%;
         width: 25%;
         position: fixed;
     }
@@ -16,9 +17,10 @@
     }
     &-buttons{
         display: flex;
-        width: 100%;
+        width: 80%;
         justify-content: space-between;
         gap: 30px;
+        margin-top: 5%;
         .a-link{
             width: calc(50% - 15px);
             height: unset;

@@ -12,7 +12,6 @@ const MainLayout = ({ children }) => {
     <div className="t-main-layout">
       <HeaderArea />
       <div className="t-main-layout-content">
-        <div className="t-main-layout-bg-fix" />
         <div className='t-main-layout-body'  >
           {children}
         </div>

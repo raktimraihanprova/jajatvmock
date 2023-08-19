@@ -1,15 +1,18 @@
-@import 'src/scss/_variable';
-@import 'src/scss/_mixin';
-
+@import '../../scss/_variable';
+@import '../../scss/_mixin';
 .a-tdl{
     &-wrap{
         display: flex;
-        align-items: inherit;
+        align-items: start;
+
     }
     &-text{
-        margin-right: 20px;
-        color: $white;
+        //margin-top: 0.7rem;
         font-family: montserrat_regular;
         font-size: calc(.2rem + .7vw);
+        color: #fff;
+        float: right;
+        margin-right: 0.8rem;
+        margin-top: calc(0.7rem + 0.0vw);
     }
 }

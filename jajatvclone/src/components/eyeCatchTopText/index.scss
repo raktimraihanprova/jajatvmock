@@ -1,19 +1,24 @@
-@import 'src/scss/_variable';
-@import 'src/scss/_mixin';
+@import '../../scss/_variable';
+@import '../../scss/_mixin';
 .a-ectt{
     &-wrap{
         display: flex;
         align-items: baseline;
     }
     &-header{
-        margin: 0;
+        //margin: 0;
         padding: 0;
-        color: $white;
+        color: #fff;
+        font-size: 1.5vw;
+        //margin-top: 0.5rem!important;
         font-weight: bold;
+
         &-desc{
-            margin-top: 30px;
-            color: $white;
-            padding-left: 10px;
+            color: #ffffff;
+            padding-top: 0.5rem;
+            margin-left: 0.5rem;
+            font-size: .9vw;
+            font-family: montserrat_bold;
         }
     }
 }

@@ -37,8 +37,10 @@ const EyeCatchArea = () => {
         <EyeCatchTopText headerText={t('jajatv')} headerDescription='Japan style book' />
         <div className='o-eyecatch-fl-wrap'>
           <div className='o-eyecatch-fl'>
-            <TextAndDashLine text='Language' />
-            <TextAndDashLine text='Follow us on' />
+            
+            <TextAndDashLine className='o-eyecatch-flーtxt' text='Language' />
+            <TextAndDashLine className='o-eyecatch-flーtxt' text='Follow us on' />
+          
           </div>
           <div className='o-eyecatch-fl'>
             <LanguageBlock />

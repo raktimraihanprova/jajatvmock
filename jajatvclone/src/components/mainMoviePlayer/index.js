@@ -11,25 +11,27 @@ import pausebutton from '../../assets/image/pause.svg'
 const MainMoviePlayer = ({ url }) => {
 
   const [isPaused, sterIsPaused] = useState(false)
-
+  const [percentage, setPercentage] = useState(0);
   const playerEl = useRef()
 
   const options = {
     root: null,
     rootMargin: '0px',
-    threshold: 0.5
+    threshold: .4
   }
 
   const callbackFunction = entries => {
     const [entry] = entries
-    let playerElObj = playerEl.current;
-    if (playerElObj) {
+    console.log(entry, playerEl.current)
+    if (playerEl.current) {
       if(entry.isIntersecting){
-        if(!playerEl.current.isPlaying){
+        if(playerEl.current.paused){
           playerEl.current.play();
         }
-      }else{
-        if(playerEl.current.isPlaying){
+      }
+      else{
+        console.log(playerEl.current.paused)
+        if(!playerEl.current.paused){
           playerEl.current.pause();
         }
       }
@@ -42,6 +44,10 @@ const MainMoviePlayer = ({ url }) => {
     if (currentTarget) observer.observe(currentTarget)
     return () => {
       if (currentTarget) observer.unobserve(currentTarget)
+
+      if(!playerEl.current.paused){
+        playerEl.current.pause();
+      }
     }
   }, [])
 
@@ -60,12 +66,14 @@ const MainMoviePlayer = ({ url }) => {
   return (
     <div className="m-movie-player-wrap">
       <div className="m-movie-player"  >
-        <video ref={playerEl} muted={true}  width='100%' src={url} />
+        <video loop={true} ref={playerEl} muted={true}  width='100%' src={url}
+        // onTimeUpdate={(e) => setPercentage(0 + (e.currentTarget.currentTime*100/e.currentTarget.duration))}
+        />
 
         <div className='playPauseBar'>
-        <CircularProgressbar value='0'  />;
+        <CircularProgressbar value= {percentage}  />
         <div className='playPauseButton'> 
-              <img src={ isPaused ? playbutton: pausebutton}  onClick={togglePause} height='20px' width='20px' />
+              <img src={ isPaused ? playbutton: pausebutton}  onClick={ () =>togglePause()} height='20px' width='20px' />
         
           </div>
       </div>

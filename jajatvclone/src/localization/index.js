@@ -24,8 +24,8 @@ i18n
         },
       },
     },
-    lng: "ja",
-    fallbackLng: "en",
+    lng: "en",
+    fallbackLng: "ja",
   });
 
 export default i18n;

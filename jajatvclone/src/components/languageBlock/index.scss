@@ -1,24 +1,64 @@
-@import 'src/scss/_variable';
-@import 'src/scss/_mixin';
+@import '../../scss/_variable';
+@import '../../scss/_mixin';
+.a-row-organizer{
+        //display: inline-block;
+}
+
+.a-dashline-default{
+        width: calc(40px + 3.5vw);
+        border-bottom: 2px solid hsla(0,0%,100%,.4);
+        position: relative;
+        float: left;
+        margin-left: 0px;
+        margin-top: -2px;
+        display: inline-block;
+}
 .a-language{
         &-block{
-                margin-right: 35%;
+                margin-right: calc(0.8rem + 15px);
                 cursor: pointer;
                 display: flex;
-                border-bottoms: 1px solid rgb(108,112,128);
+                width: 50%;
+                justify-content: end;
+                margin-top: 2.1rem;
+        }
+        &-default{
+
         }
         &-text{
+                font-size: calc(0.2rem + 0.7vw);
+                letter-spacing: 0.2rem;
+                margin-top: 1.7rem;
+                padding-left: 0!important;
+                padding-right: 0!important;
+                float: right;
+                background-color: initial;
+
                 &-active{
-                        color: $white;
-                        border-bottom: 1px solid $white;
+                        color: $white!important;
+                        border-bottom: 2px solid $white;
                 }
 
-                &-en{   
-                        color: white;
-                        margin-right: 50px;
+                &-en{
+                        font-family: montserrat_bold;
+                        color: hsla(0,0%,100%,.4);
+                        margin-right: 1.5vw;
+                        font-size: calc(0.2rem + 0.7vw);
+                        padding-left: 0!important;
+                        padding-right: 0!important;
+                        letter-spacing: .2rem;
+                        padding-bottom: calc(0.45rem + 0.05vw);
+
                 }
                 &-ja{
-                        color: white;
+                        font-family: montserrat_bold;
+                        color: hsla(0,0%,100%,.4);
+                        font-size: calc(0.2rem + 0.7vw);
+                        margin-right: 0.55rem;
+                        letter-spacing: .2rem;
+                        padding-bottom: calc(0.45rem + 0.05vw);
+
+
                 }
         }
        

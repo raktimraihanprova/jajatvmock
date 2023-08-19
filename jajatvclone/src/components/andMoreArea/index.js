@@ -20,8 +20,8 @@ const AndMoreSection = (props) => {
   }
   return ( <div className="o-ffeature-list-area">
      <InnerGridLine />
-  <h5 className='o-ffeature-list-item-bg-image-of'> other funcitons</h5>
-      <h1 className='o-ffeature-list-item-bg-image-am'>And more</h1>
+  <h5 className='o-ffeature-list-item-bg-image-of'> Other Funcitons</h5>
+      <h1 className='o-ffeature-list-item-bg-image-am'>AND MORE</h1>
   <div className='o-ffeature-list-item'>
   
     <div className='o-ffeature-list-item-bg-image'>

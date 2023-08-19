@@ -1,8 +1,10 @@
-@import 'src/scss/_variable';
-@import 'src/scss/_mixin';
+@import '../../scss/_variable';
+@import '../../scss/_mixin';
 .a-dash-line{
-    
         height: 1px;
-        width: 20px;
+        width: 15px;
         background-color: $white;
+        margin-top: calc(0.7rem + 0.5vw);
+        float: right;
+        font-style: normal;
 }

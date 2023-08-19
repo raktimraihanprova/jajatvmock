@@ -1,7 +1,8 @@
-import { useEffect, useRef } from 'react';
+import {useEffect, useRef, useState} from 'react';
 
 const MoviePlayer = ({ url }) => {
   const playerEl = useRef()
+  const [percentage, setPercentage] = useState(0);
 
   const options = {
     root: null,
@@ -35,8 +36,9 @@ const MoviePlayer = ({ url }) => {
   }, [])
 
 
+
   return (<video loop ref={playerEl} muted={true} src={url} />
-  );
+  )
 }
 
 export default MoviePlayer;
