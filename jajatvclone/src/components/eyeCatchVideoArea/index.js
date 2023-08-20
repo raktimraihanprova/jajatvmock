@@ -23,7 +23,14 @@ const EyeCatchVideoArea = () => {
 
         </div>
       </div>
-      <EyeCatchMiddileText headerText='WHAT IS JAJA TV ?' headerDescription={t('jajatv-description')} />
+      {/*<EyeCatchMiddileText headerText='WHAT IS JAJA TV ?' headerDescription={t('jajatv-description')} />*/}
+        <div className="a-ecm-wrap">
+            <h1 className="a-ecm-header">WHAT IS JAJA TV ?</h1>
+            <p className="a-ecm-header-desc"> JAJA TV combines guidebooks, local matchups and convenient coupons into a single app. Come experience TV like never before! </p>
+        </div>
+
+
+
     </div>
   );
 }

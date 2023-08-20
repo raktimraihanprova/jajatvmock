@@ -2,8 +2,12 @@
     &-wrap{
         display: flex;
         align-items: inherit;
-        gap: 30px;
+        gap: calc(2.2vw - 8px);
         width: 50%;
         justify-content: end;
+        //padding-right: calc(0.8rem + 4px);
+        transform: translateY(calc(0.8rem + 2px));
+        padding-right: calc(0.8rem + 15px);
+
     }
 }

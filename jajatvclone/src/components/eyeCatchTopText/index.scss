@@ -4,6 +4,9 @@
     &-wrap{
         display: flex;
         align-items: baseline;
+        //transform: translateY(calc(-1rem));
+        line-height: 0px;
+        margin-top: 0.5rem!important;
     }
     &-header{
         //margin: 0;

@@ -14,6 +14,7 @@ const FooterPlayStoreAarea = () => {
       <div className="m-play-store-buttons">
         <LinkIcon link={appleStore} iconSrc={appleStoreButton} />
         <LinkIcon link={androidStore} iconSrc={andoridStoreButton} />
+          {/*<img className="footer-line-img" src="../../assets/image/dashline.png" />*/}
       </div>
     </div>
   );

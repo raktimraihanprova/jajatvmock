@@ -2,11 +2,14 @@
 @import '../../../scss/_mixin';
 
 .inner-grid-line {
-    height: 100%;
+    height: calc(100% + 4rem);
     width: 1px;
     background-color: $gridColor;
     position: absolute;
-    top: 0;
+    top: -4rem;
+    white-space: nowrap;
+    overflow: unset;
+    padding-bottom: 4rem;
 
     &-1 {
         left: calc(25% - .5px);

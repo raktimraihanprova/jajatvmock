@@ -30,7 +30,7 @@ const featureList = [
     id: `04`,
     title: `Q&A`,
     subTitle: `Freely ask questions to app users from around the world`,
-    url: `https://s3-ap-northeast-1.amazonaws.com/liquid-prod-video/ui_3.mp4`,
+    url: `https://s3-ap-northeast-1.amazonaws.com/liquid-prod-video/ui_4.mp4`,
     desc: `“What’ s trending in Japan now?” “Any restaurant recommendations?” Whether it’ s something you want to find out before your trip, or if you’ re having trouble while on the go, just ask away!`,
 
   },

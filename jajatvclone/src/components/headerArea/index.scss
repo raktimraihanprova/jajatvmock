@@ -2,32 +2,42 @@
 @import '../../scss/_mixin';
 
 .o-header {
+    &-fl{
+        display: flex;
+        justify-content: end;
+    }
     &-area {
         position: fixed;
-        top: 0;
-        left: 0;
         width: 100%;
-        background-color: #09090953;
-        z-index: 99999999;
-        padding-top: 20px;
-        padding-bottom: 20px;
+        border-bottom: 1px solid hsla(0,0%,86.7%,.15);
+        padding-bottom: 0.6rem;
+        background-color: rgba(0,8,30,.4);
+        color: #fff;
+        visibility: visible;
+        opacity: 1;
+        -webkit-transition: all 2s linear;
+        transition: all 2s linear;
+        z-index: 1;
+        top: 0!important;
 
         &-content {
             display: flex;
             width: 100%;
-        }
+            margin-top: 1vw;
+            padding-bottom: 0.6rem;
 
+        }
 
         .a-ectt-wrap {
             width: 30%;
-
+            align-items: baseline;
+            padding-top: calc(0.1vw + .6rem);
 
         }
 
-
         .a-ectt-header {
-
             font-size: 1.5vw;
+
         }
 
         .a-ectt-header-desc {
@@ -41,18 +51,26 @@
 
             .a-language-block {
                 color: white;
-                max-width: 5vw;
-                font-size: 1vw;
-                margin-left: 53%;
-                margin-top: 20px;
+                width: 10%;
+                font-size: 0.7rem;
+                letter-spacing: 0.2rem;
+                padding-bottom: 0.3rem;
+                margin-left: 50%;
+                align-items: center;
+                margin-top: calc(2.2rem + 0.01vw);
+                transform: translateY(calc(-1rem + 2px));
+                margin-right: -4vw!important;
+
                 
             }
 
             .m-fii-wrap{
-                margin-left: 90%;
-                margin-top: -20px;
+                margin-left: 27%;
+                margin-top: calc(0.2rem + 0.01vw);
                 width: 10vw;
-                height: 40px;
+                height: 3vw;
+                //transform: translateY(calc(.7vw - 0.1rem));
+
             }
 
 
@@ -63,10 +81,12 @@
 
 
     &-logo1 {
-        max-width: 40px;
-        max-height: 40px;
-        margin-right: 20px;
-        margin-top: 10px;
+        float: left;
+        margin-left: 0.01rem;
+        width: calc(20px + 1.5vw);
+        max-width: 60px;
+        margin-top: 1%;
+        margin-right: 0.7rem;
     }
 
 

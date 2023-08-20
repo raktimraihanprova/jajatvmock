@@ -1,35 +1,38 @@
 .a-cut{
     &-wrap{
         //border: 1px solid red;
-        height: 1.3vw;
-        width: 7vw;
-        border-radius: 10vw!important;
-        background-color: rgb(26,32,52);
-        padding-left: 1.5vw;
-        font-style: normal;
-        align-content: center;
-        padding-top: 5rem;
-        padding-top: 0;
-        padding-bottom: calc(0.3vw + 10px);
-        margin-bottom: 0.1vw;
+        font-family: montserrat_bold;
+        color: #fff;
+        padding: 0;
+        font-size: calc(.5vw + 8px);
+        letter-spacing: .2vw;
+        position: absolute;
+        margin-top: calc(7rem + 2.5vw);
+        //margin-left: -0.95rem;
+        background-color: hsla(0,0%,100%,.1)!important;
+        border-radius: 100px!important;
+        border: none!important;
+        color: #fff;
+        font-size: calc(3px + 1vw)!important;
+        font-size: calc(3px + 1vw)!important;
+        cursor: pointer;
+        //padding-top: 0.5vw!important;
+        padding-bottom: calc(0.5vw + 3px)!important;
 
 
     }
 
     &-icon{
-        font-size: 0.7vw;
-        margin-right: 0.3vw;
-        margin-top: 0.1vw;
-        align-content: center;
-        justify-content: start;
+        width: calc(1vw + 3px);
+        margin-top: calc(-0.3vw + 3px);
+        margin-right: 0.5vw;
+        margin-left: 1vw;
+        font-size: 160%;
     }
 
     &-txt{
-        margin-left: 0vw;
-        font-size: 0.5vw;
-        font-style: normal;
-        align-content: center;
-
-
+        font-family: montserrat_bold;
+        margin-right: 1vw;
+        letter-spacing: 2px;
     }
 }

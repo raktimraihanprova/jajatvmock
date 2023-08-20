@@ -3,20 +3,30 @@
 
 .a-ecmt{
     &-wrap{
-        
-    
         margin-left: 50%;
-        
+        //width: calc(140% + 3rem);
+        margin-right: 15%;
+        height: 9.5vw;
+        padding-top: 5.4vw;
+        bottom: calc(3.8vw - 2rem);
+
     }
     &-header{
-        color: $white;
-        font-size: clamp(20px, 2vw, 45px);
-        margin-right: 20px;
+        font-family: montserrat_bold;
+        font-size: 2vw!important;
+        letter-spacing: .8vw!important;
+        overflow: hidden;
+        white-space: nowrap;
+        width: 100%;
+        color: #fff;
+        float: left;
+
         &-desc{
-            color: $white;
-            font-family: Conv_NotoSansCJKjp-Regular;
             font-size: 1.1vw;
             letter-spacing: .1rem;
+            font-family: montserrat_regular!important;
+            color: #FEFEFE;
         }
     }
 }
+

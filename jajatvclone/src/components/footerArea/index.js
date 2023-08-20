@@ -15,8 +15,8 @@ const FooterArea = () => {
     const footerBgEl = useRef()
     const generateThreshold = () =>{
         let thresholdArr = [];
-        for(let i = 1; i<= 60; i++){
-            thresholdArr.push(i/60)
+        for(let i = 1; i<= 30; i++){
+            thresholdArr.push(i/30)
         }
         return thresholdArr;
     }
@@ -27,7 +27,7 @@ const FooterArea = () => {
     }
     const callbackFunction = entries => {
         entries.forEach((entry) => {
-            footerBgEl.current.style.transform = `translateY(${-45.5*entry.intersectionRatio}vh)`
+            footerBgEl.current.style.transform = `translateY(${-500*entry.intersectionRatio}px)`
           });
       }
         useEffect(() => {
@@ -46,36 +46,23 @@ const FooterArea = () => {
 
             <div className='o-footer-noContent-Grid'></div>
             <div className='o-footer-sideGrid'>
-            
-                <img className='o-eyecatch-feature-logo' src={featureLogo} alt='circle' />
-                <div className='o-footer-dl'>
-                    <DashLine />
-                </div>
+                <img className='o-eyecatch-feature-logo-footer' src={featureLogo} alt='circle' />
+                <img className="footer-line-img" src="../../assets/image/dashline.png" alt />
             </div>
 
             <div className='o-footer-middleGrid'>
                 <small className='o-footer-middleGrid-txtSmall' >Smartphone App</small>
-                <EyeCatchMiddileText headerText='JAJA TV' headerDescription={t('footer-download-text')} />
-
-                <div className='o-footer-dl'>
-                    <DashLine />
-                </div>
-
-                <div className='o-footer-middleGrid-email' >
-                <EyeCatchMiddileText  headerText='Email:' headerDescription='support@ja-ja.tv' />
-                </div>
-
-               <div className='o-footer-middleGrid-cr'>
-               <small className='o-footer-middleGrid-txtSmall'>Copyright©2019 ARCHECO INC. All Rights Reserved.</small>
-               </div>
-
+                <p className="jajatv-footer">JAJA TV</p>
+                <p className="free-coupon-footer">Download app and get coupon free!</p>
+                <img className="footer-line-img" src="../../assets/image/dashline.png" alt />
+                <p className="sm-app-footer-email-title">Email:</p>
+                <p className="sm-app-footer-email">support@ja-ja.tv</p>
+                <p className="sm-app-footer-copy-right">Copyright©2019 ARCHECO INC. All Rights Reserved.</p>
             </div>
 
             <div className='o-footer-sideGrid' >
                 <FooterPlayStoreAarea />
-                <div className='o-footer-dl'>
-                    <DashLine />
-                </div>
+                <img className="footer-line-img" src="../../assets/image/dashline.png" alt />
                 <ContactUsText />
             </div  >
             <div className='o-footer-area-bg-img' ref={footerBgEl} />

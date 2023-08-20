@@ -2,9 +2,14 @@
 @import '../../scss/_mixin';
 .a-scroll-button{
         position: fixed;
-        right: 100px;
-        bottom: 100px;
-        transform: translateX(-15px);
+        bottom: 5rem;
+        right: 8.1%;
+        z-index: 1;
+        width: 44px;
+        height: 36px;
+        background-image: url(../../assets/image/scroll.png);
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
         cursor: pointer;
         &-text{
                 color: $white;
